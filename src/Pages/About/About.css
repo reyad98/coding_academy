@@ -1,0 +1,185 @@
+.about-section {
+  padding: 0px;
+}
+
+.top-about {
+  border: 1px solid rgb(222, 222, 222);
+  background-color: #0b5c4a;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+.top-about h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #4b4b4b;
+  text-align: center;
+  color: #ffffff;
+}
+
+.at-a-glance-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.at-a-glance-box {
+  flex-basis: calc(31.8% - 20px);
+  background-color: #f2f2f2;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.at-a-glance-box h3 {
+  margin: 0;
+  color: #5c5c5c;
+  font-size: 16px;
+}
+
+.at-a-glance-box p {
+  margin: 5px 0;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .top-about {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .at-a-glance-section {
+    flex-direction: column;
+  }
+}
+
+.history-section {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid rgb(202, 202, 202);
+}
+
+.history-section h2 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  background-color: #ebebeb;
+  padding: 10px;
+}
+
+.history-section p {
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.history_p {
+  text-align: justify;
+  padding: 20px;
+  margin-top: -15px;
+}
+
+.history-section img {
+  margin-top: 10px;
+  width: 95%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .history-section img {
+    margin-top: 10px;
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* Add your styles for the new sections */
+.counts-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.count-box {
+  flex-basis: calc(30% - 20px);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #8b8b8b;
+  background-color: #565656;
+
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.count-box:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #808080;
+}
+
+.count-box i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.count-box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .counts-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* Add your styles for the new sections and the table */
+.admission-criteria {
+  margin-top: 20px;
+}
+
+.admission-criteria h2 {
+  font-size: 19px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  background-color: #e6e4e4;
+  padding: 10px;
+}
+
+.admission-criteria table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admission-criteria table th,
+table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.admission-criteria table th {
+  background-color: #e6e6e6;
+}
+
+.admission-criteria table tr:last-child td {
+  border-bottom: none;
+}
+
+.admission-criteria table tr:hover {
+  background-color: #f5f5f5;
+}
+/* Add styles for other sections as needed */
+
+/* Add styles for other sections as needed */
+
+/* Add more styles as needed */

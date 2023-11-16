@@ -1,0 +1,261 @@
+/* Navbar.css */
+
+.top_img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.top_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.overlay .logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.overlay h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+.overlay p {
+  margin: 0px;
+}
+
+.overlay button {
+  background-color: #0b5c4a;
+  color: white;
+  border: none;
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .overlay .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    margin-top: 5px;
+  }
+
+  .overlay h2 {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .overlay p {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .overlay button {
+    margin-right: 0px;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0px;
+  color: rgb(79, 77, 77);
+  border: 1px solid rgb(218, 218, 218);
+  margin-bottom: 5px;
+  justify-content: space-between; /* Added to space between logo and menu */
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px; /* Added margin to keep logo away from menu */
+}
+
+.logo h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.fa-home {
+  font-size: 16px;
+  color: #4e4e4e;
+}
+
+.fas {
+  color: #4e4e4e;
+}
+
+.menu {
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 0px;
+}
+
+.nav-item a {
+  color: rgb(63, 62, 62);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  margin: 0;
+  font-size: 13px;
+  border-left: 1px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
+  padding: 14px 18px;
+}
+
+.nav-item a:hover {
+  background-color: #0b5c4a;
+  color: #ffffff;
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+.submenu {
+  width: 200px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Add z-index */
+  padding: 20px;
+}
+
+.submenu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  margin: 0;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.submenu li {
+  margin-left: 15px;
+}
+
+.nav-item:hover .submenu {
+  display: block;
+}
+.mobile-menu-icon {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.3s; /* Add a smooth transition */
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-wrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.menu-wrapper.open {
+  display: block;
+  max-height: 200px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-left: 0px; /* Added margin to keep logo away from menu */
+  }
+
+  .menu {
+    flex-direction: column;
+    display: none; /* Hide by default */
+  }
+
+  .mobile-open .menu {
+    display: flex; /* Show when mobile menu is open */
+  }
+
+  .mobile-menu-icon {
+    display: block; /* Show the hamburger icon */
+  }
+
+  .mobile-menu {
+    padding-top: 10px; /* Adjust the top padding for menu items */
+  }
+
+  .mobile-open .logo {
+    display: none; /* Hide logo when mobile menu is open */
+  }
+
+  .submenu {
+    width: 130px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Add z-index */
+    padding: 10px;
+  }
+}

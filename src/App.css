@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 60px;
+  background-color: rgb(227, 245, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.back {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  display: flex;
+  flex: 1;
+  gap: 30px;
+}
+
+.side-container {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  width: 30%; /* Fixed width for the side container */
+}
+
+.main-container {
+  flex: 3; /* Takes up 70% of the available space */
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .app {
+    padding: 0 8px; /* Reduce the overall padding */
+    background-color: rgb(255, 255, 255);
   }
-  to {
-    transform: rotate(360deg);
+
+  .back {
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column; /* Change to column layout */
+  }
+
+  .side-container {
+    width: 100%; /* Full width for side container on smaller screens */
+    margin-bottom: 20px; /* Add some spacing between side and main container */
+    margin: 0 auto;
+  }
+
+  .main-container {
+    width: 100%; /* Full width for side container on smaller screens */
+    margin-bottom: 20px;
   }
 }

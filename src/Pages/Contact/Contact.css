@@ -1,0 +1,83 @@
+/* Contact Container */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Section */
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 3px;
+}
+
+/* WhatsApp Option */
+.whatsapp-option {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f8f8; /* WhatsApp green color */
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: 1px dotted rgb(67, 221, 40);
+}
+
+.whatsapp-option p {
+  margin: 0;
+  color: black;
+}
+
+.fa-whatsapp {
+  font-size: 34px;
+  color: #5aed90;
+}
+
+/* Google Map Section */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+}
+
+.iframe-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Common Styling for Links */
+a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 10px;
+  }
+
+  .contact-info,
+  .message-form,
+  .whatsapp-option,
+  .google-map {
+    margin-bottom: 10px;
+  }
+}

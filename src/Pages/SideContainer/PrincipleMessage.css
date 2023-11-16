@@ -1,0 +1,40 @@
+/* PrincipleMessage.css */
+
+.principle-message {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principle-header h3 {
+  border: 1px solid #0b5c4a;
+  padding: 10px;
+  margin: 0;
+  background-color: #0b5c4a;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.image {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.message-text {
+  margin: 0;
+  padding: 15px;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.see-more-link {
+  margin-left: 10px;
+  color: blue;
+  text-decoration: underline;
+}

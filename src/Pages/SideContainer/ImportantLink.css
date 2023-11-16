@@ -1,0 +1,51 @@
+/* ImportantLinks.css */
+.important-links {
+  margin-top: 20px;
+  border: 1px solid rgb(225, 225, 225);
+}
+
+.section-title_links {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.section-title_links {
+  font-size: 16px;
+  margin: 0px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  font-weight: 500;
+  color: #0c0c0c;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  padding: 10px;
+}
+
+.link-row:last-child {
+  border-bottom: none; /* Remove border from last link */
+  margin-bottom: -15px;
+}
+.link-icon {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.link-text {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+
+.bottom-line {
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+}

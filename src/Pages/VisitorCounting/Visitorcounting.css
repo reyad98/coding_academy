@@ -1,0 +1,56 @@
+/* VisitorCounting.css */
+
+.visitor-count {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 0px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.visitor-count h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #4f4f4f;
+  padding: 10px;
+  border-bottom: 1.5px solid rgb(212, 212, 212);
+  font-weight: 500;
+}
+
+.count-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count-item {
+  display: flex;
+  flex-direction: column; /* Change to column */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar {
+  width: 40%; /* Adjust the width as needed */
+  height: 1.5px;
+  background-color: #ccc;
+  margin-top: 10px; /* Add margin to the top */
+}
+
+.count-text {
+  font-size: 16px;
+  color: #383838;
+  font-weight: 400;
+}
+
+.count-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #47484b;
+}
+
+.all-time {
+  margin-bottom: 20px;
+}

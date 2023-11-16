@@ -1,0 +1,78 @@
+/* SlideNav.css */
+
+.slide-nav-container {
+  display: flex;
+  align-items: center;
+  background-color: #0b5c4a;
+  padding: 0px;
+  position: relative; /* Add position: relative */
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.fa-bell {
+  color: #094b44;
+}
+
+.latest-notice {
+  background-color: #66edd4;
+  width: 120px;
+  border: 1px solid rgb(164, 255, 222);
+  border-left: 2px solid #168679;
+
+  color: rgb(8, 87, 93);
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-weight: 500;
+  position: relative; /* Add position: relative */
+  z-index: 2; /* Add z-index to be above notices */
+}
+.notice-slider {
+  display: flex;
+  animation: slide 25s linear infinite; /* Slow down the animation */
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.notice {
+  border-left: 1px solid #d5d5d5;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow */
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .notice {
+    text-align: left;
+    border-left: none;
+    border-left: 1px solid #e2f1ef;
+    padding: 10px;
+  }
+
+  .latest-notice {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #66edd4;
+    border: 1px solid rgb(164, 255, 222);
+    color: #0b5c4a;
+    padding: 3px 10px;
+  }
+}
